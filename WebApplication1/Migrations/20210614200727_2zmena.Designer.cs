@@ -10,8 +10,8 @@ using MvcMovie.Data;
 namespace WebApplication1.Migrations
 {
     [DbContext(typeof(MvcMovieContext))]
-    [Migration("20210601223807_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20210614200727_2zmena")]
+    partial class _2zmena
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,8 +31,14 @@ namespace WebApplication1.Migrations
                     b.Property<string>("Genre")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Komentar")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Rating")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("ReleaseDate")
                         .HasColumnType("datetime2");

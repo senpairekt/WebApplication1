@@ -10,8 +10,8 @@ using MvcMovie.Data;
 namespace WebApplication1.Migrations
 {
     [DbContext(typeof(MvcMovieContext))]
-    [Migration("20210609001016_Rating")]
-    partial class Rating
+    [Migration("20210614195357_inicial")]
+    partial class inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

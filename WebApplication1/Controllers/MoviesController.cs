@@ -53,7 +53,7 @@ namespace WebApplication1.Controllers
             return View(movieGenreVM);
         }
 
-        // GET: Movies1/Details/5
+        // GET: Movies1/Details/5[';
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
